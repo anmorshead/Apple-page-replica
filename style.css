@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "SF";
+    src: url("fonts/SF-Pro.ttf") format("truetype");
+    font-style:normal;
+    font-weight:100;
+}
+@font-face {
+    font-family: "SF-bold";
+    src: url("fonts/SF-Pro-Text-Semibold.otf") format("truetype");
+    font-style:normal;
+    font-weight:100;
+}
+body {
+    font-family: 'SF';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background-color:rgb(48, 46, 46);
+  }
+  
+  nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  nav li {
+    display:inline-block;
+    margin-right: 40px;
+    padding: 10px;
+
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 100;
+    
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  .logo{
+    max-width: 13px;
+  }
+
+  .hero-white {
+    background-size: cover;
+    background-position: center;
+    color:black;
+    text-align: center;
+    padding: 80px 0 0 0;
+    box-sizing: border-box;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+   h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'SF-bold';
+  
+  }
+  .hero-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+    text-decoration: underline;
+
+  }
+  
+.apple{
+    max-width: 30px;
+}
+
+.iphone11{
+    max-width: 500px;
+}
+.hero-black {
+    background-size: cover;
+    background-position: center;
+    background-color:black;
+    text-align: center;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    color:white;
+    
+}
+.hero-black h1{
+    font-family: 'SF-bold';
+}
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 10px; 
+}
+
+.hero-content small {
+    display: block; 
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    padding: 0px;
+}
+
+  .grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+    height: auto;
+  }
+  .grid-item img {
+  max-width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+.grid-item h2{
+    font-family: 'SF-bold';
+}
+.grid-item a {
+    display: block;
+    margin: 10px 0 10px 0; 
+}
+.grid-item p {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 0 auto; 
+    max-width: 60%; 
+    text-align: center; 
+}
+
+
+
+
+   
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px; /* Add margin to separate nav items vertically */
+    }
+  
+    .grid-container {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+      grid-template-rows: repeat(4, auto); /* Adjust the height to auto for responsive height */
+    }
+  
+    .grid-item {
+      padding: 20px;
+    }
+  
+    .grid-item img {
+      max-width: 100%; /* Make images responsive within grid items */
+      height: auto;
+    }
+  
+    .grid-item p {
+      max-width: 100%; /* Make paragraph text responsive within grid items */
+    }
+  
+    .grid-item a {
+      margin: 10px 0;
+    }
+  }
+  
